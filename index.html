@@ -1,26 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
 	<title>ESCAPE</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="/css/style.css">
+	<link rel="stylesheet" href="css/style-xxl.css" media="only screen and (max-width:1450px)">
+	<link rel="stylesheet" href="css/style-lg.css" media="only screen and (max-width:1200px)">
+	<link rel="stylesheet" href="css/style-xl.css" media="only screen and (max-width:992px)">
+	<link rel="stylesheet" href="css/style-md.css" media="only screen and (max-width:768px)">
+	<link rel="stylesheet" href="css/style-xs.css" media="only screen and (max-width:576px)">
 </head>
 <body>
 
 <header>
-	<div class="container">
+
+	<nav class="navbar navbar-expand-md navbar-dark bg-dark d-sm-none">
+	  <a class="navbar-brand" href="/"><img src="img/logo.png" alt="">Escape</a>
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+	    <span class="navbar-toggler-icon"></span>
+	  </button>
+
+	  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+	    <ul class="navbar-nav mr-auto">
+	      <li class="nav-item active">
+	        <a class="nav-link" href="#block-1">Home <span class="sr-only">(current)</span></a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="#block-2">Services</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="#block-3">Clients</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="#block-4">Team</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="#block-5">Contacts</a>
+	      </li>
+	    </ul>
+	  </div>
+	</nav>
+
+	<div class="container hide-xs">
 		<div class="row">
 			<div class="col-xl-10 mx-auto">
 				<div class="nav_menu">
-					<div class="logo"><img src="img/logo.png" alt=""><p>escape</p></div>
+					<a href="/"><div class="logo"><img src="img/logo-1.png" class="hide-white hidden" alt=""><img src="img/logo.png" class="hide-gray" alt=""><p>escape</p></div></a>
 					<div class="menu">
-						<a href="#">Home</a>
-						<a href="#">Services</a>
-						<a href="#">Clients</a>
-						<a href="#">Team</a>
-						<a href="#">Contacts</a>
+						<a href="#block-1">Home</a>
+						<a href="#block-2">Services</a>
+						<a href="#block-3">Clients</a>
+						<a href="#block-4">Team</a>
+						<a href="#block-5">Contacts</a>
 					</div>
 				</div>
 			</div>
@@ -139,14 +173,67 @@
 		</div>
 	</div>	
 </section>
-<footer>
-	<div class="col-xl-5">
-		
+<footer id="block-5">
+	<div class="container">
+		<div class="row">
+			<div class="col-xl-5 ml-auto">
+				<div class="contacts">
+					<h1>Say <b>Hello</b></h1>
+					<p>Don't be shy, drop us an email and say hello! We are a really nice bunch of people :)</p>
+					<div class="social_push">
+						
+						<div class="soc_ico">
+							<div class="s-img"><img src="/img/ico-7.png" alt=""></div>
+							<a href="tel:+4165550000"><p>(416) 555-0000</p></a>
+						</div>
+
+						
+						<div class="soc_ico">
+							<div class="s-img"><img src="/img/ico-8.png" alt=""></div>
+							<a href="#" target="_blank"><p>hello@escape.com</p></a>
+						</div>
+
+						<div class="soc_ico">
+							<div class="s-img"><img src="/img/ico-9.png" alt=""></div>
+							<a href="#" target="_blank"><p>@escape</p></a>
+						</div>
+
+						<div class="soc_ico">
+							<div class="s-img"><img src="/img/ico-10.png" alt=""></div>
+							<a href="#" target="_blank"><p>facebook.com/escape</p></a>
+						</div>
+						
+						<div class="soc_ico">
+							<div class="s-img"><img src="/img/ico-11.png" alt=""></div>
+							<a href="#" target="_blank"><p>plus.com/escape</p></a>
+						</div>
+						
+						<div class="soc_ico">
+							<div class="s-img"><img src="/img/ico-12.png" alt=""></div>
+							<a href="#" target="_blank"><p>pinterest.com/escape</p></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-xl-5 mr-auto">
+				<div class="form">
+					<form action="" class="form_one">
+						<input type="text" class="name" placeholder="Your name *">
+						<input type="text" class="mail" placeholder="Your E-mail *">
+						<textarea name="" id="txt_area" cols="30" rows="10" placeholder="Your message *"></textarea>
+						<button class="submit">Submit</button>
+					</form>
+				</div>
+			</div>
+			<div class="col-xl-10 mx-auto">
+				<p class="fot-p">© 2014 Escape by FreebiesXpress • Made In Toronto</p>
+			</div>
+		</div>
 	</div>
-	<div class="col-xl-5"></div>
 </footer>
-	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 	<script src="/js/main.js"></script>
 </body>
 </html>

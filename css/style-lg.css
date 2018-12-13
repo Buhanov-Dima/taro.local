@@ -1,0 +1,3 @@
+.main_b2.bg-1 {margin-left: 35px;} .main_b2.bg-1::before {right: 5em;} .main_b2.bg-2 {margin-right: 0; margin-left: auto; max-width: 555px;}
+.main_b2.bg-2::before {left: 0;} .social_push {justify-content: space-around;} .soc_ico {margin-bottom: 20px;} .form_one {display: flex; flex-direction: column; align-items: center;}
+.submit {margin: 30px auto;}
