@@ -1,0 +1,204 @@
+body {margin: 0;}
+@font-face{
+	font-family: 'Cubano';
+	src: url('/fonts/Cubano-Regular.otf');
+}
+@font-face{
+	font-family: 'BrandonGrotesque';
+	src: url('/fonts/BrandonGrotesque-Regular.ttf');
+}
+@font-face{
+	font-family: 'BrandonGrotesque-Thin';
+	src: url('/fonts/BrandonGrotesque-Thin.ttf');
+}
+@font-face{
+	font-family: 'BrandonGrotesque-Bold';
+	src: url('/fonts/BrandonGrotesque-Bold.ttf');
+}
+a:link {text-decoration: none;}
+header {
+	position: fixed;
+	width: 100%;
+	margin: 0 auto;
+	z-index: 100;
+}
+a, p, h1, h2, h3, h4, h5 {margin: 0;}
+
+.logo {
+	display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo p {
+	margin-left: 10px;
+}
+
+.menu {
+	width: 100%;
+	max-width: 370px;
+	display: flex;
+	justify-content: space-between;
+}
+.menu a{
+  font-size: 18px;
+  font-family: "BrandonGrotesque";
+  color: rgb(255, 255, 255);
+}
+
+.nav_menu {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 40px;
+}
+
+#block-1 {
+	background: url('/img/Tint.jpg') no-repeat center;
+	background-size: cover;
+}
+
+.main_b1 {
+	min-height: 620px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.main_b1 h3, .main_b1 h1, .main_b1 a{
+	color: #ffffff;
+}
+
+.logo p{
+  font-size: 25px;
+  font-family: "Cubano";
+  color: rgb(70, 70, 70);
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.main_b1 h3 {
+  font-size: 32px;
+  font-family: "BrandonGrotesque-Thin";
+  color: rgb(255, 255, 255);
+}
+
+.main_b1 h1 {
+  font-size: 66px;
+  font-family: "BrandonGrotesque-Bold";
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  margin: 30px 0 60px;
+}
+
+.main_b1 a {
+  font-size: 23px;
+  font-family: "BrandonGrotesque-Bold";
+  color: rgb(255, 255, 255);
+  border: 2px solid #ffffff;
+  border-radius: 3px;
+  line-height: 60px;
+  display: block;
+  width: 240px;
+  margin: 0 auto;
+}
+
+.main_b2.bg-1 {
+	margin-left: 150px;
+}
+.main_b2.bg-1::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: -15em;
+	margin: auto;
+	width: 100%;
+	height: 222px;
+	background: url('/img/icon-1.png') no-repeat right;
+	background-size: contain;
+	z-index: -1;
+}
+.main_b2.bg-2 {
+	margin-right: 150px;
+}
+.main_b2.bg-2::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: -20em;
+	margin: auto;
+	width: 100%;
+	height: 195px;
+	background: url('/img/icon-2.png') no-repeat left;
+	background-size: contain;
+}
+.main_b2 h1{
+	font-size: 60px;
+	font-family: "BrandonGrotesque";
+	color: rgb(34, 34, 34);
+	margin-bottom: 30px;
+}
+
+.main_b2 b {
+	font-family: "BrandonGrotesque-Bold";	
+}
+
+.main_b2 p {
+	font-family: "BrandonGrotesque";
+	color: rgb(119, 119, 119);
+	max-width: 555px;
+	line-height: 1.333;
+	margin-bottom: 35px;
+}
+#block-2, #block-3, #block-4 {
+	padding: 100px 0; 
+}
+#block-3 {
+	background-color: #fafafa;
+}
+
+
+.main_b4 {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.ico_b4 {
+	min-width: 70px;
+	height: 70px;
+	border-radius: 50%;
+	background-color: #222222;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-right: 18px;
+}
+
+.txt_b4 h4{
+  font-size: 22px;
+  font-family: "BrandonGrotesque";
+  color: rgb(34, 34, 34);
+  line-height: 1.2;
+  margin-bottom: 8px;
+}
+
+.txt_b4 p {
+  font-size: 18px;
+  font-family: "BrandonGrotesque";
+  color: rgb(119, 119, 119);
+  line-height: 1;
+  padding-left: 3px;
+}
+
+.info_b4 {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	margin-bottom: 40px;
+	max-width: 370px;
+}
+
+footer {
+	background-color: #7690c5;
+}
